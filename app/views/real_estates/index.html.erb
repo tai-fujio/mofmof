@@ -16,7 +16,7 @@
     <td><%=r.room_remarks%></td>
     <td><%=link_to "詳細"%></td>
     <td><%=link_to "編集",edit_real_estate_path(r.id)%></td>
-    <td><%=link_to "削除"%></td>
+    <td><%=link_to "削除",real_estate_path(r.id),method: :delete,data: { confirm: '本当に削除していいですか？' }%></td>
   </tr>
   <% end %>
 </table>

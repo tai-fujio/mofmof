@@ -19,7 +19,12 @@ class RealEstatesController < ApplicationController
     end    
   end
 
-  def destroy; end
+  def destroy
+    @real_estate = RealEstate.find(params[:id])
+    @real_estate.destroy
+    flash[:notice] = "物件を削除しました"
+    redirect_to real_estates_path
+  end  
 
   def edit
     @real_estate = RealEstate.find(params[:id])
