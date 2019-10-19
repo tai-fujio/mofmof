@@ -5,11 +5,11 @@ ja:
       station: 最寄り駅
     attributes:
       real_estate:
-        room_name: タイトル
-        room_rent: 内容
-        room_address: 内容
-        room_age: 内容
-        room_remarks: 内容
+        room_name: 物件名
+        room_rent: 賃料
+        room_address: 住所
+        room_age: 築年数
+        room_remarks: 備考
       station:
         station_line: 路線名
         station_name: 駅名
