@@ -6,7 +6,7 @@ class RealEstatesController < ApplicationController
   
   def new
     @real_estate = RealEstate.new
-    2.times { @real_estate.near_stations.build }
+    2.times { @real_estate.stations.build }
   end
 
   def create
