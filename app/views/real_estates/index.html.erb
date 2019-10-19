@@ -15,7 +15,7 @@
     <td><%=r.room_age%>年</td>
     <td><%=r.room_remarks%></td>
     <td><%=link_to "詳細"%></td>
-    <td><%=link_to "編集"%></td>
+    <td><%=link_to "編集",edit_real_estate_path(r.id)%></td>
     <td><%=link_to "削除"%></td>
   </tr>
   <% end %>

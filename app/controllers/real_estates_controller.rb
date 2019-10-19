@@ -21,9 +21,19 @@ class RealEstatesController < ApplicationController
 
   def destroy; end
 
-  def edit; end
+  def edit
+    @real_estate = RealEstate.find(params[:id])
+  end
 
-  def update; end
+  def update
+    @real_estate = RealEstate.find(params[:id])
+    if @real_estate.update(real_estate_params)
+      flash[:notice] = "物件を編集しました"
+      redirect_to real_estates_path
+    else
+      render  :edit
+    end    
+  end
 
   private
   def real_estate_params
