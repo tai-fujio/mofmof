@@ -10,7 +10,7 @@ ja:
         room_address: 住所
         room_age: 築年数
         room_remarks: 備考
-      station:
+      stations:
         station_line: 路線名
         station_name: 駅名
         walk_from: 徒歩分数
