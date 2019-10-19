@@ -3,6 +3,10 @@ class RealEstatesController < ApplicationController
     @real_estates = RealEstate.all
     @real_estate = RealEstate.new
   end
+
+  def show
+    @real_estate = RealEstate.find(params[:id])
+  end  
   
   def new
     @real_estate = RealEstate.new

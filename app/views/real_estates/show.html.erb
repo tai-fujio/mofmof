@@ -1,0 +1,20 @@
+    <h4>物件名: <%=@real_estate.room_name%></h4><br>
+    <h4>賃料: <%=@real_estate.room_rent.to_s(:delimited, delimiter: ',')%>円</h4><br>
+    <h4>住所: <%=@real_estate.room_address%></h4><br>
+    <h4>築年数 <%=@real_estate.room_age%>年</h4><br>
+    <h4>備考 <%=@real_estate.room_remarks%></h4><br>    
+  <hr>
+  <% @real_estate.stations.each do |s|%>
+  <div class = station_list>  
+    <h3>最寄り駅<%=%></h3>
+      <h4>路線名 <%=s.station_line%></h4><br>
+      <h4>駅名 <%=s.station_name%></h4><br>
+      <h4>徒歩分数 <%=s.walk_from%>分</h4><br> 
+  </div>  
+  <% end %>
+  <div class="footer_list">      
+    <ul class="footer">
+      <li><%=link_to "編集",edit_real_estate_path(@real_estate.id)%></li>
+      <li><%=link_to "戻る",real_estates_path%></li>
+    </ul>
+  </div>    

@@ -5,3 +5,16 @@
 .table_head{
   width:30px;  
 }
+
+.station_list h4{
+  padding-left:30px;
+}
+.footer li {
+	display:inline;
+	list-style-type:none;
+	margin-right:6px;
+  padding-left:10px;
+}
+.footer li+li {
+	border-left:1px solid black;
+}

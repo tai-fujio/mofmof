@@ -32,4 +32,7 @@
     <% end %>    
   <%= f.submit "更新する"%>
 <% end %>
-<%=link_to "戻る",real_estates_path%>
+<ul class="footer">
+  <li><%=link_to "戻る",real_estates_path%></li>
+  <li><%=link_to "詳細",real_estate_path(@real_estate.id)%></li>
+</ul>  
